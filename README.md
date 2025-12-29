@@ -29,6 +29,7 @@ The analysis uses a logistic regression model due to its interpretability and su
 * Model training using a pipeline to prevent data leakage
 * Hyperparameter tuning using cross-validation
 * Evaluation using ROC–AUC, precision–recall analysis, and confusion matrices
+* VIF / Multicollinearity:We checked multicollinearity using VIF. Credit_Limit, Total_Revolving_Bal, and Avg_Open_To_Buy exhibit perfect linear dependence (accounting identity), leading to infinite VIF. These were removed to stabilize coefficient interpretation.
 
 ---
 
@@ -67,6 +68,10 @@ The results suggest that customer churn is strongly influenced by transaction be
 ## Limitations and Future Work
 
 While the model demonstrates strong performance, several limitations should be noted. First, the analysis is based on historical customer data and assumes that past behavior patterns will continue into the future. Changes in customer preferences, market conditions, or bank policies may affect the model’s accuracy over time.
+
+Digital transaction behavior is only partially represented by aggregate variables; more granular digital engagement signals (e.g., app logins, digital payment adoption, channel usage) were not available.
+
+“Missing value imputation was not performed because the dataset was already pre-cleaned/imputed.”
 
 Second, the dataset does not include information on customer lifetime value or the financial cost of churn. As a result, the model treats all churned customers equally, even though some customers may be more valuable to retain than others.
 
