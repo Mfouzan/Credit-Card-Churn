@@ -46,6 +46,32 @@ Performance was assessed beyond accuracy to account for class imbalance.
 A threshold of 0.4 was chosen to prioritize early identification of customers
 at risk of attrition.
 
+### ROC Curve (Test Set)
+
+The ROC curve demonstrates strong class separation on the held-out test set,
+with an AUC of approximately 0.92.
+
+![ROC Curve](plots/roc_curve.png)
+
+
+### Precision–Recall Tradeoff and Threshold Selection
+
+Because churn prediction is a class-imbalanced problem, precision and recall
+were analyzed across different probability thresholds. A lower decision
+threshold was selected to prioritize recall for churned customers.
+
+![Precision Recall](plots/precision_recall.png)
+
+
+### Lift Chart
+
+The lift chart shows the model’s ability to rank customers by churn risk.
+High-risk customers are concentrated in the top deciles, indicating that the
+model is effective for targeted retention strategies.
+
+![Lift Chart](plots/lift_chart.png)
+
+
 ---
 
 ## Results
