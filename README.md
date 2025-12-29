@@ -71,7 +71,7 @@ While the model demonstrates strong performance, several limitations should be n
 
 Digital transaction behavior is only partially represented by aggregate variables; more granular digital engagement signals (e.g., app logins, digital payment adoption, channel usage) were not available.
 
-“Missing value imputation was not performed because the dataset was already pre-cleaned/imputed.”
+Missing value imputation was not performed because the dataset was already pre-cleaned/imputed.
 
 Second, the dataset does not include information on customer lifetime value or the financial cost of churn. As a result, the model treats all churned customers equally, even though some customers may be more valuable to retain than others.
 
