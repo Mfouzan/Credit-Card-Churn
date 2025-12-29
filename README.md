@@ -32,6 +32,21 @@ The analysis uses a logistic regression model due to its interpretability and su
 
 ---
 
+## Model Evaluation & Validation
+
+The final model was evaluated on a held-out test set using multiple metrics.
+Performance was assessed beyond accuracy to account for class imbalance.
+
+- ROC AUC: ~0.92
+- KS Statistic: ~0.66
+- Precision–Recall tradeoff analyzed across thresholds
+- Final decision threshold selected based on recall for churn detection
+
+A threshold of 0.4 was chosen to prioritize early identification of customers
+at risk of attrition.
+
+---
+
 ## Results
 
 The final model achieves strong predictive performance on the test set:
