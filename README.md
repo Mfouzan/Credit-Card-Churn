@@ -72,6 +72,26 @@ model is effective for targeted retention strategies.
 ![Lift Chart](plots/lift_chart.png)
 
 
+### Feature Importance (Logistic Regression)
+
+The figure below shows the most influential features in the logistic regression
+model based on coefficient magnitude. Coefficients indicate the direction and
+relative strength of association with churn, conditional on all other variables
+in the model.
+
+Transaction-related features dominate the model, highlighting the importance of
+customer engagement and usage intensity in predicting churn.
+
+It is important to note that coefficient signs should be interpreted with care
+in the presence of correlated predictors. For example, transaction amount and
+transaction count are strongly correlated; decile-based analysis was used to
+validate that higher overall transaction activity is generally associated with
+lower churn risk, despite conditional coefficient behavior in the regression.
+
+![Feature Importance](plots/coeff_importance.png)
+
+
+
 ---
 
 ## Results
