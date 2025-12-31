@@ -29,7 +29,7 @@ The analysis uses a logistic regression model due to its interpretability and su
 * Model training using a pipeline to prevent data leakage
 * Hyperparameter tuning using cross-validation
 * Evaluation using ROC–AUC, precision–recall analysis, and confusion matrices
-* VIF / Multicollinearity:We checked multicollinearity using VIF. Credit_Limit, Total_Revolving_Bal, and Avg_Open_To_Buy exhibit perfect linear dependence (accounting identity), leading to infinite VIF. These were removed to stabilize coefficient interpretation.
+* VIF / Multicollinearity: We checked multicollinearity using VIF. Credit_Limit, Total_Revolving_Bal, and Avg_Open_To_Buy exhibit perfect linear dependence (accounting identity), leading to infinite VIF. These were removed to stabilize coefficient interpretation.
 
 ---
 
